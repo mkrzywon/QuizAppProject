@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_fg_box">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/a"
+        android:background="@color/image_dialog"
+        android:contentDescription="@string/prize"
+        android:src="@drawable/prize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:id="@+id/text_title"
+        android:layout_below="@id/a"
+        android:layout_marginTop="@dimen/standard"
+        android:layout_marginEnd="@dimen/quarter"
+        android:layout_marginStart="@dimen/quarter"
+        android:layout_marginBottom="@dimen/standard"
+        android:textSize="@dimen/answer"
+        android:fontFamily="@font/crimfbb"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message"
+        android:id="@+id/text_dialog"
+        android:layout_below="@+id/text_title"
+        android:layout_marginTop="@dimen/standard"
+        android:layout_marginLeft="@dimen/quarter"
+        android:layout_marginRight="@dimen/quarter"
+        android:layout_marginBottom="@dimen/standard"
+        android:textSize="@dimen/message_dialog"
+        android:fontFamily="@font/greetings"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_dialog"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/text_dialog"
+        android:layout_marginBottom="@dimen/standard"
+        android:background="@drawable/ok_button"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

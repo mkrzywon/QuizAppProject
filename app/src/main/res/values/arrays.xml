@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Question1">
+        <item>windmills</item>
+        <item>@string/green_q1</item>
+        <item>@string/green_q1_1</item>
+        <item>@string/green_q1_2</item>
+        <item>@string/green_q1_3</item>
+        <item>@string/green_q1_4</item>
+        <item>@string/green_q1_1</item>
+    </string-array>
+    <string-array name="Question2">
+        <item>turbines</item>
+        <item>@string/green_q2</item>
+        <item>@string/green_q2_1</item>
+        <item>@string/green_q2_2</item>
+        <item>@string/green_q2_3</item>
+        <item>@string/green_q2_4</item>
+        <item>@string/green_q2_1</item>
+    </string-array>
+    <string-array name="Question3">
+        <item>solar</item>
+        <item>@string/green_q3</item>
+        <item>@string/green_q3_1</item>
+        <item>@string/green_q3_2</item>
+        <item>@string/green_q3_3</item>
+        <item>@string/green_q3_4</item>
+        <item>@string/green_q3_2</item>
+    </string-array>
+    <string-array name="Question4">
+        <item>einstein</item>
+        <item>@string/green_q4</item>
+        <item>@string/green_q4_1</item>
+        <item>@string/green_q4_2</item>
+        <item>@string/green_q4_3</item>
+        <item>@string/green_q4_4</item>
+        <item>@string/green_q4_1</item>
+    </string-array>
+    <string-array name="Question5">
+        <item>dunes</item>
+        <item>@string/green_q5</item>
+        <item>@string/green_q5_1</item>
+        <item>@string/green_q5_2</item>
+        <item>@string/green_q5_3</item>
+        <item>@string/green_q5_4</item>
+        <item>@string/green_q5_4</item>
+    </string-array>
+    <string-array name="Question6">
+        <item>geothermal</item>
+        <item>@string/green_q6</item>
+        <item>@string/green_q6_1</item>
+        <item>@string/green_q6_2</item>
+        <item>@string/green_q6_3</item>
+        <item>@string/green_q6_4</item>
+        <item>@string/green_q6_3</item>
+    </string-array>
+    <string-array name="Question7">
+        <item>hydropower</item>
+        <item>@string/green_q7</item>
+        <item>@string/green_q7_1</item>
+        <item>@string/green_q7_2</item>
+        <item>@string/green_q7_3</item>
+        <item>@string/green_q7_4</item>
+        <item>@string/green_q7_3</item>
+    </string-array>
+    <string-array name="Question8">
+        <item>powerplant</item>
+        <item>@string/green_q8</item>
+        <item>@string/green_q8_1</item>
+        <item>@string/green_q8_2</item>
+        <item>@string/green_q8_3</item>
+        <item>@string/green_q8_4</item>
+        <item>@string/green_q8_4</item>
+    </string-array>
+    <string-array name="Question9">
+        <item>biomass</item>
+        <item>@string/green_q9</item>
+        <item>@string/green_q9_1</item>
+        <item>@string/green_q9_2</item>
+        <item>@string/green_q9_3</item>
+        <item>@string/green_q9_4</item>
+        <item>@string/green_q9_1</item>
+    </string-array>
+    <string-array name="Question10">
+        <item>sun</item>
+        <item>@string/green_q10</item>
+        <item>@string/green_q10_1</item>
+        <item>@string/green_q10_2</item>
+        <item>@string/green_q10_3</item>
+        <item>@string/green_q10_4</item>
+        <item>@string/green_q10_3</item>
+    </string-array>
+</resources>

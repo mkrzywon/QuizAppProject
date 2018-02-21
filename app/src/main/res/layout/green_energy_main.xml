@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greene"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/questionInfo"
+            style="@style/question_info"
+            android:layout_marginEnd="@dimen/standard"
+            android:layout_marginStart="@dimen/standard"
+            android:layout_marginTop="@dimen/standard"
+            android:text="@string/question_no" />
+
+        <ImageView
+            android:id="@+id/backgroundImage"
+            style="@style/image"
+            android:layout_marginEnd="@dimen/standard"
+            android:layout_marginStart="@dimen/standard"
+            android:layout_marginTop="@dimen/half"
+            android:background="@drawable/rounded_shape"
+            android:contentDescription="@string/quiz_picture"
+            android:foreground="@drawable/rounded_fg"
+            android:src="@drawable/windmills" />
+
+        <LinearLayout
+            style="@style/container_questions_layout_front_portrait"
+            android:layout_marginEnd="@dimen/standard"
+            android:layout_marginStart="@dimen/standard"
+            android:layout_marginTop="@dimen/half">
+
+            <TextView
+                android:id="@+id/quizQuestion"
+                style="@style/question"
+                android:layout_marginBottom="@dimen/half"
+                android:text="@string/green_q1" />
+
+            <LinearLayout
+                style="@style/container_questions_layout_portrait"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/rg"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/rb1"
+                            style="@style/radiobutton"
+                            android:checked="false"
+                            android:text="@string/green_q1_1" />
+
+                        <RadioButton
+                            android:id="@+id/rb2"
+                            style="@style/radiobutton"
+                            android:checked="false"
+                            android:text="@string/green_q1_2" />
+
+                        <RadioButton
+                            android:id="@+id/rb3"
+                            style="@style/radiobutton"
+                            android:checked="false"
+                            android:text="@string/green_q1_3" />
+
+                        <RadioButton
+                            android:id="@+id/rb4"
+                            style="@style/radiobutton"
+                            android:checked="false"
+                            android:text="@string/green_q1_4" />
+
+                    </RadioGroup>
+
+                    <CheckBox
+                        android:id="@+id/checkbox1"
+                        style="@style/checkbox"
+                        android:onClick="checkboxOnClick"
+                        android:text="" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox2"
+                        style="@style/checkbox"
+                        android:layout_below="@id/checkbox1"
+                        android:onClick="checkboxOnClick"
+                        android:text="" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox3"
+                        style="@style/checkbox"
+                        android:layout_below="@id/checkbox2"
+                        android:onClick="checkboxOnClick"
+                        android:text="" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox4"
+                        style="@style/checkbox"
+                        android:layout_below="@id/checkbox3"
+                        android:onClick="checkboxOnClick"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textquestion1"
+                        style="@style/texviewedit"
+                        android:layout_marginStart="@dimen/standard"
+                        android:layout_marginTop="@dimen/half"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textquestion2"
+                        style="@style/texviewedit"
+                        android:layout_below="@id/checkbox1"
+                        android:layout_marginStart="@dimen/standard"
+                        android:layout_marginTop="@dimen/half"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textquestion3"
+                        style="@style/texviewedit"
+                        android:layout_below="@id/checkbox2"
+                        android:layout_marginStart="@dimen/standard"
+                        android:layout_marginTop="@dimen/half"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textquestion4"
+                        style="@style/texviewedit"
+                        android:layout_below="@id/checkbox3"
+                        android:layout_marginStart="@dimen/standard"
+                        android:layout_marginTop="@dimen/half"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/textviewedit"
+                        style="@style/edit_textview"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/double_standard"
+                        android:hint="@string/youranswer"
+                        android:inputType="text" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/checkmark"
+                        style="@style/correct_wrong_image"
+                        android:layout_marginBottom="@dimen/double_standard"
+                        android:contentDescription="@string/correct_sign"
+                        android:src="@drawable/checkmark" />
+
+                    <ImageView
+                        android:id="@+id/exclamationMark"
+                        style="@style/correct_wrong_image"
+                        android:layout_marginBottom="@dimen/double_standard"
+                        android:contentDescription="@string/wrong_sign"
+                        android:src="@drawable/exclamation" />
+
+                    <TextView
+                        android:id="@+id/correct"
+                        style="@style/correct_wrong_text"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/correct" />
+
+                    <TextView
+                        android:id="@+id/wrong"
+                        style="@style/correct_wrong_text"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/wrong" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout style="@style/match_match">
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                style="@style/bottom_button"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/standard"
+                android:contentDescription="@string/next"
+                android:onClick="setNext_button"
+                android:src="@drawable/next_button" />
+
+            <ImageButton
+                android:id="@+id/submitButton"
+                style="@style/bottom_button"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/standard"
+                android:layout_marginEnd="@dimen/standard"
+                android:contentDescription="@string/submit"
+                android:onClick="submit"
+                android:src="@drawable/submit_button" />
+
+            <ImageButton
+                android:id="@+id/resetButton"
+                style="@style/bottom_button"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/standard"
+                android:layout_marginStart="@dimen/standard"
+                android:contentDescription="@string/reset"
+                android:onClick="resetButton"
+                android:src="@drawable/reset_button" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

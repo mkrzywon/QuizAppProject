@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="double_standard">32dp</dimen>
+    <dimen name="standard">16dp</dimen>
+    <dimen name="half">8dp</dimen>
+    <dimen name="quarter">4dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="motto_portrait">32sp</dimen>
+    <dimen name="motto_landscape">30sp</dimen>
+    <dimen name="slogan">62sp</dimen>
+    <dimen name="question_number">20sp</dimen>
+    <dimen name="question">20sp</dimen>
+    <dimen name="answer">18sp</dimen>
+    <dimen name="correct_wrong">18sp</dimen>
+    <dimen name="toast">16sp</dimen>
+    <dimen name="message_dialog">20sp</dimen>
+</resources>
